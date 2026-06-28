@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Operacionais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="progressBar"></div>
+
+<div class="sidebar">
+  <h2>⚡ Sistemas</h2>
+  <a href="#inicio">🏠 Início</a>
+  <a href="#ios">📱 iOS</a>
+  <a href="#android">🤖 Android</a>
+  <a href="#linux">🐧 Linux</a>
+  <a href="#windows">🪟 Windows</a>
+  <a href="#comparacao">📊 Comparação</a>
+  <a href="#quiz">🧠 Quiz</a>
+</div>
+
+<div class="content">
+
+<section id="inicio">
+  <h1>🌐 Sistemas Operacionais</h1>
+  <p>Um sistema operacional é o software que gerencia hardware e permite o uso do computador.</p>
+</section>
+
+<section id="ios">
+  <h1>📱 iOS</h1>
+  <p>Desenvolvido pela Apple, baseado no Darwin.</p>
+</section>
+
+<section id="android">
+  <h1>🤖 Android</h1>
+  <p>Baseado no kernel Linux e desenvolvido pelo Google.</p>
+</section>
+
+<section id="linux">
+  <h1>🐧 Linux</h1>
+  <p>Sistema open-source criado por Linus Torvalds.</p>
+</section>
+
+<section id="windows">
+  <h1>🪟 Windows</h1>
+  <p>Sistema da Microsoft amplamente usado em PCs.</p>
+</section>
+
+<section id="comparacao">
+  <h1>📊 Comparação</h1>
+  <table>
+    <tr>
+      <th>Sistema</th>
+      <th>Segurança</th>
+      <th>Popularidade</th>
+      <th>Facilidade</th>
+    </tr>
+    <tr><td>iOS</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>Android</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>Linux</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐</td></tr>
+    <tr><td>Windows</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td></tr>
+  </table>
+</section>
+
+<section id="quiz">
+  <h1>🧠 Quiz Avançado</h1>
+
+  <div class="quiz-box">
+
+    <p>1) Qual kernel o Linux utiliza?</p>
+    <button onclick="responder('q1','linux-kernel', this)">Kernel Linux</button>
+    <button onclick="responder('q1','windows-kernel', this)">Kernel Windows</button>
+    <button onclick="responder('q1','ios-kernel', this)">Kernel iOS</button>
+
+    <p>2) iOS é baseado em qual sistema?</p>
+    <button onclick="responder('q2','darwin', this)">Darwin</button>
+    <button onclick="responder('q2','linux', this)">Linux</button>
+    <button onclick="responder('q2','windows', this)">Windows</button>
+
+    <p>3) Qual kernel o Windows moderno usa?</p>
+    <button onclick="responder('q3','windows-nt', this)">Windows NT</button>
+    <button onclick="responder('q3','linux', this)">Linux</button>
+    <button onclick="responder('q3','bsd', this)">BSD</button>
+
+    <p>4) Qual sistema é mais aberto e customizável?</p>
+    <button onclick="responder('q4','android', this)">Android</button>
+    <button onclick="responder('q4','ios', this)">iOS</button>
+    <button onclick="responder('q4','windows', this)">Windows</button>
+
+    <p>5) Quem criou o Linux?</p>
+    <button onclick="responder('q5','linus', this)">Linus Torvalds</button>
+    <button onclick="responder('q5','bill', this)">Bill Gates</button>
+    <button onclick="responder('q5','steve', this)">Steve Jobs</button>
+
+    <br><br>
+    <button onclick="mostrarResultado()">Ver Resultado</button>
+
+    <h2 id="resultadoQuiz"></h2>
+  </div>
+</section>
+
+</div>
+
+<button id="topButton" onclick="voltarTopo()">↑</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
